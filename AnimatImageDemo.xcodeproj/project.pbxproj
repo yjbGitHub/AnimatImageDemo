@@ -13,7 +13,7 @@
 		AD89F5C01E6BD6F7005618AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD89F5BE1E6BD6F7005618AA /* Main.storyboard */; };
 		AD89F5C21E6BD6F7005618AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD89F5C11E6BD6F7005618AA /* Assets.xcassets */; };
 		AD89F5C51E6BD6F7005618AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD89F5C31E6BD6F7005618AA /* LaunchScreen.storyboard */; };
-		AD89F5CE1E6BD70C005618AA /* RCAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89F5CD1E6BD70C005618AA /* RCAnimatedImagesView.m */; };
+		AD89F5CE1E6BD70C005618AA /* AnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89F5CD1E6BD70C005618AA /* AnimatedImagesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		AD89F5C11E6BD6F7005618AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD89F5C41E6BD6F7005618AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD89F5C61E6BD6F7005618AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD89F5CC1E6BD70C005618AA /* RCAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCAnimatedImagesView.h; sourceTree = "<group>"; };
-		AD89F5CD1E6BD70C005618AA /* RCAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAnimatedImagesView.m; sourceTree = "<group>"; };
+		AD89F5CC1E6BD70C005618AA /* AnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedImagesView.h; sourceTree = "<group>"; };
+		AD89F5CD1E6BD70C005618AA /* AnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedImagesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 		AD89F5B41E6BD6F7005618AA /* AnimatImageDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AD89F5CC1E6BD70C005618AA /* RCAnimatedImagesView.h */,
-				AD89F5CD1E6BD70C005618AA /* RCAnimatedImagesView.m */,
+				AD89F5CC1E6BD70C005618AA /* AnimatedImagesView.h */,
+				AD89F5CD1E6BD70C005618AA /* AnimatedImagesView.m */,
 				AD89F5B81E6BD6F7005618AA /* AppDelegate.h */,
 				AD89F5B91E6BD6F7005618AA /* AppDelegate.m */,
 				AD89F5BB1E6BD6F7005618AA /* ViewController.h */,
@@ -157,7 +157,7 @@
 			files = (
 				AD89F5BD1E6BD6F7005618AA /* ViewController.m in Sources */,
 				AD89F5BA1E6BD6F7005618AA /* AppDelegate.m in Sources */,
-				AD89F5CE1E6BD70C005618AA /* RCAnimatedImagesView.m in Sources */,
+				AD89F5CE1E6BD70C005618AA /* AnimatedImagesView.m in Sources */,
 				AD89F5B71E6BD6F7005618AA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +313,7 @@
 				AD89F5CB1E6BD6F7005618AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

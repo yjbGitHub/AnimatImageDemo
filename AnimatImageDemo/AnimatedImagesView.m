@@ -1,19 +1,18 @@
+//  AppDelegate.m
+//  AnimatImageDemo
 //
-//  RCAnimatedImagesView.m
-//  RCloudMessage
-//
-//  Created by 杜立召 on 15/3/18.
-//  Copyright (c) 2015年 RongCloud. All rights reserved.
-//
+//  Created by yujianbin on 2017/3/5.
+//  Copyright © 2017年 yujianbin. All rights reserved.
 
-#import "RCAnimatedImagesView.h"
+
+#import "AnimatedImagesView.h"
 
 #define noImageDisplayingIndex -1
 #define imageSwappingAnimationDuration 2.0f
 
 #define imageViewsBorderOffset 150
 
-@interface RCAnimatedImagesView () {
+@interface AnimatedImagesView () {
   BOOL animating;
   NSUInteger totalImages;
   NSUInteger currentlyDisplayingImageViewIndex;
@@ -29,7 +28,7 @@
                            andNumber:(NSUInteger)maxNumber;
 @end
 
-@implementation RCAnimatedImagesView
+@implementation AnimatedImagesView
 
 @synthesize imageViews = _imageViews;
 @synthesize imageSwappingTimer = _imageSwappingTimer;
@@ -189,7 +188,7 @@
   return _timePerImage;
 }
 
-- (void)setDelegate:(id<RCAnimatedImagesViewDelegate>)delegate {
+- (void)setDelegate:(id<AnimatedImagesViewDelegate>)delegate {
   if (delegate != _delegate) {
     _delegate = delegate;
     totalImages = [_delegate animatedImagesNumberOfImages:self];

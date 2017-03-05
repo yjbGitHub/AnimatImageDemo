@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "RCAnimatedImagesView.h"
-@interface ViewController ()<RCAnimatedImagesViewDelegate>
-@property(retain, nonatomic) IBOutlet RCAnimatedImagesView *animatedImagesView;
+#import "AnimatedImagesView.h"
+@interface ViewController ()<AnimatedImagesViewDelegate>
+@property(retain, nonatomic) IBOutlet AnimatedImagesView *animatedImagesView;
 
 @end
 
@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //添加动态图
-    self.animatedImagesView = [[RCAnimatedImagesView alloc]
+    self.animatedImagesView = [[AnimatedImagesView alloc]
                                initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width,
                                                         self.view.bounds.size.height)];
     [self.view addSubview:self.animatedImagesView];
@@ -43,11 +43,11 @@
 }
 
 - (NSUInteger)animatedImagesNumberOfImages:
-(RCAnimatedImagesView *)animatedImagesView {
+(AnimatedImagesView *)animatedImagesView {
     return 3;
 }
 
-- (UIImage *)animatedImagesView:(RCAnimatedImagesView *)animatedImagesView
+- (UIImage *)animatedImagesView:(AnimatedImagesView *)animatedImagesView
                    imageAtIndex:(NSUInteger)index {
     NSString *imageName = @"";
     if (index == 0) {
